@@ -18,7 +18,7 @@ class apiRequest {
   destroy(url) {
     delete this.queue[url];
     if (!Object.keys(this.queue).length) {
-      console.log(this.queue);
+      // console.log(this.queue);
     }
   }
   interceptors(instance, url) {

@@ -3,10 +3,10 @@
     <div class="tag-label">{{ data.label }}</div>
     <div class="tag-list">
       <span
-        class="tag-item"
-        :class="isActive(item)"
         v-for="item in data.list"
         :key="item.id"
+        class="tag-item"
+        :class="isActive(item)"
         @click="handleTagItemClick(item)"
       >
         {{ item.name }}

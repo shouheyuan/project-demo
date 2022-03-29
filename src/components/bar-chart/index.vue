@@ -1,5 +1,5 @@
 <template>
-  <div class="border" :id="id" :style="{ height: height + 'px' }"></div>
+  <div :id="id" class="border" :style="{ height: height + 'px' }"></div>
 </template>
 
 <script>
@@ -34,6 +34,7 @@ export default {
     id: {
       type: String,
       require: true,
+      default: "bar-chart",
     },
     height: {
       type: Number,

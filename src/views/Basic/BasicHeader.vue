@@ -45,6 +45,14 @@ export default {
       ],
     };
   },
+  watch: {
+    $route(newVal) {
+      this.changeCurrentMenu(newVal);
+    },
+  },
+  mounted() {
+    this.changeCurrentMenu(this.$route);
+  },
   methods: {
     onMenuClick({ key }) {
       this.$router.push({
@@ -59,14 +67,6 @@ export default {
     },
     changeCurrentMenu(route) {
       this.currentMenu = [route.meta.menu];
-    },
-  },
-  mounted() {
-    this.changeCurrentMenu(this.$route);
-  },
-  watch: {
-    $route(newVal) {
-      this.changeCurrentMenu(newVal);
     },
   },
 };

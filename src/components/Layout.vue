@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import BasicHeader from "@/views/Basic/BasicHeader";
+import BasicHeader from "../views/Basic/BasicHeader";
 export default {
   components: {
     BasicHeader,

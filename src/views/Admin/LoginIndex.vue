@@ -41,6 +41,7 @@
 export default {
   methods: {
     userLogin() {
+      this.$utils.setToken(Date.now());
       this.$router.push({
         name: "homeIndex",
       });
